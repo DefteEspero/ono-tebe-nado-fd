@@ -3,7 +3,6 @@
 .header {
   padding: 0 50px;
   width: 1100px;
-  height: 293px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -14,7 +13,6 @@
 
 .nav {
   width: 391.48px;
-  height: 22px;
 }
 
 .nav-list {
@@ -52,7 +50,6 @@
 .address {
   margin-left: 100px;
   width: 236px;
-  height: 98px;
   justify-self: end;
   display: flex;
   flex-direction: column;
@@ -74,7 +71,7 @@
   background-image: url("../images/cover.jpg");
   background-size: cover;
   background-position: center;
-  height: 757px;
+  min-height: 757px;
   width: 1100px;
   display: flex;
   flex-direction: column;
@@ -99,7 +96,6 @@
   grid-template-rows: repeat(3, auto);
   row-gap: 20px;
   width: 1030px;
-  height: 385px;
 }
 
 .cover-word {
@@ -131,7 +127,6 @@
 .cover-subtitle {
   color: #fff;
   width: 660px;
-  height: 28px;
   font-size: 22px;
   text-transform: uppercase;
   word-spacing: 19px;
@@ -140,10 +135,8 @@
 }
 
 .button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 32px;
+  place-items: center;
+  display: grid;
   font-size: 22px;
   text-transform: uppercase;
   border: 1px solid #fff;
@@ -171,8 +164,7 @@
 /* Lots */
 
 .lots {
-  margin-bottom: 181px;
-  margin: 0 24px;
+  margin: 180px 24px 155px 24px;
 }
 
 .section-title {
@@ -208,7 +200,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 596px;
+  min-height: 596px;
   width: 334px;
 }
 
@@ -258,9 +250,8 @@
   grid-template-columns: 240px 1fr;
   gap: 25px 24px;
   align-items: start;
-  margin: 155px 24px 180px 24px;
+  margin: 120px 24px 155px 24px;
   width: 1052px;
-  height: 595px;
 }
 
 .about-logo-wrap {
@@ -304,12 +295,10 @@
 
 .about-text-p p:first-child {
   width: 688px;
-  height: 120px;
 }
 
 .about-text-p p:last-child {
   width: 693px;
-  height: 168px;
 }
 
 /* Footer */
@@ -324,7 +313,6 @@
 
 .footer-address {
   width: 240px;
-  height: 100px;
   font-size: 18px;
   line-height: 24.3px;
 }
@@ -353,11 +341,13 @@
   justify-self: end;
   padding: 0;
   margin: 0;
-  height: 48px;
 }
 
-.socials-linkimg {
-  width: 48px;
-  height: 48px;
+.socials-item {
   display: block;
+}
+
+.socials-link {
+  height: 48px;
+  width: 48px;
 }
